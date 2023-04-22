@@ -1,13 +1,11 @@
-const event = new Date('April 22, 2023 23:15:30');
 
-evento.setDate(28);
+let hoy = new Date();
 
-console.log(evento.getDate());
-// Expected output: 24
+let dia = hoy.getDate();
+let mes = hoy.getMonth()+1;
+let agnio = hoy.getFullYear();
 
-evento.setDate(32);
-// Only 31 days in August!
+// AAA-MM-DD:
 
-console.log(evento.getDate());
-// Expected output: 1
-
+let formato1 = `${agnio}-${mes}-${dia}`;
+console.log(formato1);
